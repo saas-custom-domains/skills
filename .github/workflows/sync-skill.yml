@@ -1,6 +1,6 @@
 # The skill is maintained in the docs and published at docs.saascustomdomains.com, which also lists it in
-# /.well-known/agent-skills/index.json with its digest. This job copies the published file here and opens a
-# pull request when it changed.
+# /.well-known/agent-skills/index.json with its digest. Changes are reviewed there, so this job copies the
+# published file here and commits it when it changed.
 name: Sync skill
 
 on:
@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   sync:
@@ -21,9 +20,7 @@ jobs:
       - name: Download the published skill
         run: curl -fsSL https://docs.saascustomdomains.com/.well-known/agent-skills/saas-custom-domains/SKILL.md -o skills/saas-custom-domains/SKILL.md
 
-      - name: Open a pull request if it changed
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Commit it if it changed
         run: |
           if git diff --quiet; then
             echo "The skill is up to date."
@@ -31,9 +28,5 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B sync-skill
           git commit -am "Sync the skill from docs.saascustomdomains.com"
-          git push --force origin sync-skill
-          gh pr view sync-skill >/dev/null 2>&1 || gh pr create --head sync-skill \
-            --title "Sync the skill from docs.saascustomdomains.com" \
-            --body "The published skill at https://docs.saascustomdomains.com/.well-known/agent-skills/saas-custom-domains/SKILL.md changed."
+          git push
