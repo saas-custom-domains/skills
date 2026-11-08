@@ -12,6 +12,7 @@ SaaS Custom Domains is a managed reverse proxy. Your user's customer points thei
 - JSON request and response bodies. Rate limit: 360 requests per minute per token.
 - Full reference: https://docs.saascustomdomains.com/llms-full.txt and https://docs.saascustomdomains.com/openapi.json
 - To manage domains from an MCP client instead of writing API calls (for example, adding one customer's domain or checking why it isn't live), use the MCP server at `https://mcp.saascustomdomains.com/mcp`, signing in with OAuth or using the same token: https://docs.saascustomdomains.com/mcp. Code in the app itself should call the API.
+- For one-off operations from a terminal, a script or CI, the CLI wraps the same API: `npx @saas-custom-domains/cli domains add app.customer.com --upstream app.yourapp.com --json`, with the token in `SCD_API_TOKEN`. Docs: https://docs.saascustomdomains.com/cli
 
 ## 1. One-time setup: the upstream
 
