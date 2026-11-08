@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "saas-custom-domains": {
+      "serverUrl": "https://mcp.saascustomdomains.com/mcp"
+    }
+  }
+}

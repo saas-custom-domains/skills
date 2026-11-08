@@ -1,0 +1,13 @@
+{
+  "name": "saas-custom-domains",
+  "owner": {
+    "name": "SaaS Custom Domains"
+  },
+  "plugins": [
+    {
+      "name": "saas-custom-domains",
+      "source": "./",
+      "description": "Add custom domains with automatic SSL to your SaaS app, and manage your customers' domains, DNS and traffic, with the SaaS Custom Domains skill and MCP server."
+    }
+  ]
+}

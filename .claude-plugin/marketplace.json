@@ -1,0 +1,35 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "saas-custom-domains",
+  "description": "The official SaaS Custom Domains plugin for coding agents.",
+  "owner": {
+    "name": "SaaS Custom Domains",
+    "email": "support@saascustomdomains.com",
+    "url": "https://saascustomdomains.com"
+  },
+  "plugins": [
+    {
+      "name": "saas-custom-domains",
+      "source": "./",
+      "description": "Add custom domains with automatic SSL to your SaaS app, and manage your customers' domains, DNS and traffic, with the SaaS Custom Domains skill and MCP server.",
+      "author": {
+        "name": "SaaS Custom Domains",
+        "email": "support@saascustomdomains.com",
+        "url": "https://saascustomdomains.com"
+      },
+      "homepage": "https://saascustomdomains.com/agent-setup",
+      "repository": "https://github.com/saas-custom-domains/skills",
+      "license": "MIT",
+      "keywords": [
+        "custom-domains",
+        "saas",
+        "multi-tenant",
+        "ssl",
+        "tls",
+        "dns",
+        "white-label",
+        "mcp"
+      ]
+    }
+  ]
+}

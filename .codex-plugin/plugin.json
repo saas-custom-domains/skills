@@ -1,0 +1,48 @@
+{
+  "name": "saas-custom-domains",
+  "version": "0.1.0",
+  "description": "Add custom domains with automatic SSL to your SaaS app, and manage your customers' domains, DNS and traffic, with the SaaS Custom Domains skill and MCP server.",
+  "author": {
+    "name": "SaaS Custom Domains",
+    "email": "support@saascustomdomains.com",
+    "url": "https://saascustomdomains.com"
+  },
+  "homepage": "https://saascustomdomains.com/agent-setup",
+  "repository": "https://github.com/saas-custom-domains/skills",
+  "license": "MIT",
+  "keywords": [
+    "custom-domains",
+    "saas",
+    "multi-tenant",
+    "ssl",
+    "tls",
+    "dns",
+    "white-label",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "SaaS Custom Domains",
+    "shortDescription": "Custom domains with automatic SSL",
+    "longDescription": "Let your SaaS customers use their own domains. The skill teaches the agent the SaaS Custom Domains API, DNS records, webhooks and how to verify forwarded requests. The MCP server lets it add domains, look up the DNS records your customers need, check why a domain isn't live and read traffic.",
+    "developerName": "SaaS Custom Domains",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://saascustomdomains.com/agent-setup",
+    "privacyPolicyURL": "https://app.saascustomdomains.com/privacy",
+    "termsOfServiceURL": "https://app.saascustomdomains.com/terms",
+    "defaultPrompt": [
+      "Add custom domains to this app with SaaS Custom Domains",
+      "Add app.acme.com and tell me which DNS records Acme needs",
+      "Which of our customers still haven't set up their DNS?"
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./logo.svg",
+    "logo": "./logo.svg",
+    "screenshots": []
+  }
+}

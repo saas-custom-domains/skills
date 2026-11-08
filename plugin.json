@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "saas-custom-domains",
+  "version": "0.1.0",
+  "description": "Add custom domains with automatic SSL to your SaaS app, and manage your customers' domains, DNS and traffic, with the SaaS Custom Domains skill and MCP server.",
+  "author": {
+    "name": "SaaS Custom Domains",
+    "email": "support@saascustomdomains.com",
+    "url": "https://saascustomdomains.com"
+  },
+  "homepage": "https://saascustomdomains.com/agent-setup",
+  "repository": "https://github.com/saas-custom-domains/skills",
+  "license": "MIT",
+  "keywords": [
+    "custom-domains",
+    "saas",
+    "multi-tenant",
+    "ssl",
+    "tls",
+    "dns",
+    "white-label",
+    "mcp"
+  ]
+}

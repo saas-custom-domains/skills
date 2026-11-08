@@ -1,0 +1,20 @@
+{
+  "name": "saas-custom-domains",
+  "interface": {
+    "displayName": "SaaS Custom Domains"
+  },
+  "plugins": [
+    {
+      "name": "saas-custom-domains",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/saas-custom-domains/skills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
