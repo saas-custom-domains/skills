@@ -72,6 +72,7 @@ The server is remote, so there's nothing to install. Connect by signing in with 
 - [llms.txt](https://docs.saascustomdomains.com/llms.txt) and [llms-full.txt](https://docs.saascustomdomains.com/llms-full.txt): the API docs in markdown
 - [openapi.json](https://docs.saascustomdomains.com/openapi.json): the OpenAPI spec
 - [auth.md](https://docs.saascustomdomains.com/auth.md): how agents get API credentials
+- [CLI](https://github.com/saas-custom-domains/cli): `npx @saas-custom-domains/cli`, for terminals, scripts, CI and agents that run commands
 - [scd-mock](https://github.com/saas-custom-domains/scd-mock): a local mock of the API and proxy, for development and CI
 - [Example apps](https://github.com/saas-custom-domains): runnable custom domains examples for 13 frameworks
 
